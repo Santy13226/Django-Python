@@ -1,0 +1,17 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <h1>PROJECTS</h1>
+    {% for project in projects %}
+        <article class="card">
+            <li>
+                <a href="{% url 'project_detail' project.id %}">
+                    <h1>{{project.name}}</h1>
+                </a>
+            </li>
+            
+
+        </article>
+    {% endfor %}
+
+{% endblock content %}

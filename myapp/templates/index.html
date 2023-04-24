@@ -1,0 +1,11 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>{{title}}</h1>
+
+    <img src={% static 'imagenes/escudo.png' %} alt="" width="70"> </img>
+
+    <p>Hola, es un gusto realizar paginas web con Python y Django para el bak y frontend de mi pagina</p>
+    {% lorem 5 p random %}
+{% endblock content %}
